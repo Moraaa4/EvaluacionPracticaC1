@@ -1,0 +1,1 @@
+SELECT 'Migration v1.0 executed successfully' AS status;
