@@ -24,7 +24,7 @@ export default async function AtRiskReport({ searchParams }: { searchParams: Pro
 
       <table className="w-full border-collapse border border-slate-700">
         <thead>
-          {/* Encabezado corregido: Fondo azul oscuro para contraste */}
+          {/* Encabezado */}
           <tr className="bg-slate-800 text-white">
             <th className="border border-slate-700 p-3 text-left">Nombre</th>
             <th className="border border-slate-700 p-3 text-left">Email</th>
