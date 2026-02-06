@@ -72,25 +72,21 @@ cd evaluacion-practica
 
 Copia el archivo de ejemplo y configura las variables:
 
-```bash
+bash
 cp .env.example .env
-```
 
-Edita `.env` con tus credenciales:
 
-```env
-# PostgreSQL (superusuario)
-POSTGRES_DB=school_db
-POSTGRES_USER=admin
-POSTGRES_PASSWORD=admin123
+Edita .env con tus credenciales siguiendo el formato:
 
-# Usuario de aplicación
+env
+# PostgreSQL (superusuario configurado en scripts SQL)
+POSTGRES_DB=academy_db
+POSTGRES_USER=admin_boss
+POSTGRES_PASSWORD=tu_password_seguro
+
+# Usuario de aplicación (definido en 00-roles.sql)
 APP_DB_USER=app_user
-APP_DB_PASSWORD=app_pass
-
-# URL de conexión
-DATABASE_URL=postgresql://app_user:app_pass@db:5432/school_db
-```
+APP_DB_PASSWORD=password_para_la_app_2026
 
 > **Nota**: Para desarrollo local (sin Docker), cambia `@db:5432` por `@localhost:5432`
 
