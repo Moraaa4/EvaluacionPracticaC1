@@ -71,8 +71,3 @@ JOIN grades gr ON e.id = gr.enrollment_id
 GROUP BY s.name, s.program, g.term;
 
 -- Permisos finales para app_user
-GRANT SELECT ON vw_course_performance TO app_user;
-GRANT SELECT ON vw_teacher_load TO app_user;
-GRANT SELECT ON vw_students_at_risk TO app_user;
-GRANT SELECT ON vw_group_attendance TO app_user;
-GRANT SELECT ON vw_student_ranking TO app_user;
